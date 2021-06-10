@@ -1,34 +1,39 @@
-<!--- Base layout, used on every page --->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Quantum - A Front End Starter Kit</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="author" content="Derick Moncado">
-	<meta name="description" content="Quantum - A frontend starter kit that is focused on automated web developement.">
-	<meta name="keywords" content="keywords,here">
-	<link rel="favicon" href="images/favicons/favicon.ico" type="">
+  <head>
+    <title>Sandbox!</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Sandbox - A Playground for quick static builds"
+    />
 
-	<!--- CSS --->
-	<!-- build:css -->
-	<link rel="stylesheet" href="{{root}}assets/vendor/css/all.css">
-	<link rel="stylesheet" href="{{root}}assets/css/main.css">
-	<!-- endbuild -->
+    <!--- CSS --->
+    <!-- build:css -->
+    <link rel="stylesheet" href="{{root}}assets/vendor/css/all.css" />
+    <link rel="stylesheet" href="{{root}}assets/css/main.css" />
+    <!-- endbuild -->
+  </head>
 
-	<!--- Favicons --->
-	{{> favicons}}
-</head>
+  <body>
+    <main role="main">
+      {{> body}}
+    </main>
+  </body>
 
-<body>
-	{{> navigation}}
-
-	<main role="main">
-		{{> body}}
-	</main>
-
-	{{> footer}}
-</body>
+  <!--- Scripts - scripts inbetween these special tags get compiled + concatenated --->
+  <!-- build:js -->
+  <script src="{{root}}assets/vendor/js/all.js"></script>
+  <script src="{{root}}assets/vendor/js/jquery.js"></script>
+  <script src="{{root}}assets/vendor/js/popper.js"></script>
+  <script src="{{root}}assets/vendor/js/bootstrap.js"></script>
+  <script src="{{root}}assets/vendor/js/slick.js"></script>
+  <script src="{{root}}assets/vendor/js/emergence.js"></script>
+  <script src="{{root}}assets/js/custom.js"></script>
+  <!-- endbuild -->
 </html>
